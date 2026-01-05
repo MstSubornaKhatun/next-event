@@ -1,0 +1,57 @@
+===============================
+Next.js Project Setup Notes
+===============================
+
+🎯 Cue (কী-ওয়ার্ড / প্রশ্ন)
+- Next.js project কীভাবে তৈরি করতে হয়?
+- Shadcn কীভাবে install করতে হয়?
+- Extra packages install করার ধাপগুলো কী?
+- Home page কোথায় থাকে?
+- কোন package image আনতে দেয় না?
+
+📝 Notes (বিস্তারিত তথ্য)
+
+🔹 Next.js Install
+- Command → npx create-next-app@latest
+- Setup options:
+  - Project name → next-event
+  - TypeScript → Yes/No (customizable)
+  - Linter → ESLint
+  - React Compiler → Yes/No
+  - Tailwind CSS → Yes/No
+  - src/ directory → Yes/No
+  - App Router → Yes/No
+  - Import alias → @/*
+
+- Dependencies installed:
+  - next, react, react-dom
+- DevDependencies installed:
+  - @tailwindcss/postcss, @types/node, @types/react, @types/react-dom
+  - eslint, eslint-config-next, tailwindcss, typescript
+
+- Result → Project created successfully at:
+  C:\Projects25\typescriptAndNextjs\next-event
+
+🔹 Shadcn Install
+- Command → npx shadcn@latest init
+- Add components:
+  - npx shadcn@latest add separator
+  - npx shadcn@latest add sheet
+  - npx shadcn@latest add input
+  - npx shadcn@latest add badge
+
+🔹 Extra Packages
+- Security → npm i bcrypt dotenv
+
+🔹 Home Page
+- Default entry → page.tsx (inside app router or src/app depending on setup)
+
+🔹 Important Note
+- Next.js → Unsplash এর image সরাসরি আনতে দেয় না (API restriction / hotlink issue)।
+
+📌 Summary
+- Next.js project তৈরি করতে → npx create-next-app@latest
+- Shadcn UI install করতে → npx shadcn@latest init এবং প্রয়োজনীয় component add করতে হয়।
+- Extra packages → bcrypt + dotenv (security/env management)।
+- Home page → page.tsx
+- Unsplash image → Next.js সরাসরি আনতে দেয় না।
